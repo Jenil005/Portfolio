@@ -1,46 +1,29 @@
-# Jenil Patel — Cybersecurity Portfolio
+# Cybersecurity Portfolio
 
-A standalone static portfolio for GitHub Pages at https://spyderhacker.tech.
+A static cybersecurity-themed portfolio built with HTML, CSS, and JavaScript.
 
-## Website files
+## Project structure
 
-- `index.html`: résumé-based content and page layout
-- `styles.css`: responsive cybersecurity theme
+- `index.html`: page content and layout
+- `styles.css`: responsive styling
 - `app.js`: project dialogs and accessible profile tabs
-- `Jenil-Patel-Resume.pdf`: original résumé download
+- `favicon.svg`: site icon
 - `fonts/`: self-hosted fonts and licenses
-- `CNAME`: custom domain configuration
-- `.nojekyll`: serve the files directly without a Jekyll build
+- `.nojekyll`: serves static files without a Jekyll build
 
-All biographical information comes from the provided résumé. No backend,
-account login, external JavaScript dependencies, or build step is required.
+## Local preview
 
-## Preview
+Run the following command from the project directory:
 
-Run `python -m http.server 8000` from this directory, then open
-http://localhost:8000.
+```sh
+python -m http.server 8000 --bind 127.0.0.1
+```
 
-## Publish
+Open http://localhost:8000 in a browser.
 
-In GitHub Settings → Pages, select **Deploy from a branch**, the `main` branch,
-and `/(root)`. Set the custom domain to `spyderhacker.tech` before changing DNS.
+## Deployment
 
-## DNS
-
-Replace the previous website A records (`162.159.143.30` and `172.66.3.26`)
-with these four GitHub Pages A records for host `@`:
-
-- `185.199.108.153`
-- `185.199.109.153`
-- `185.199.110.153`
-- `185.199.111.153`
-
-Keep your existing nameservers. Other mail records are unrelated to this migration.
-After migration, the previous `_openai-site-verification` and
-`_cf-custom-hostname` TXT records are no longer needed for this website.
-Enable Enforce HTTPS in GitHub Pages when the certificate is ready.
-
-Reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+The static files can be hosted with GitHub Pages. No build step is required.
 
 ## Fonts
 
