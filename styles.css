@@ -33,3 +33,6 @@ dialog{position:fixed;background:#0b1722;color:var(--white);border:1px solid #4a
 .resume-entry>span{white-space:nowrap;font-size:13px;color:#475569}
 .resume-paper p{margin:5px 0}.resume-paper ul{padding-left:21px;margin:7px 0 16px}.resume-paper li{margin:5px 0}
 @media(max-width:600px){.resume-section{padding:48px 0}.resume-paper{padding:26px 20px;font-size:14px}.resume-entry{display:block}.resume-entry>span{display:block;margin-top:3px}.resume-paper h3{font-size:27px}.resume-contact{overflow-wrap:anywhere}}
+
+.resume-page .section-heading h1{font-family:var(--display);font-size:clamp(31px,4vw,48px);line-height:1.1;margin:0;letter-spacing:-1px}
+.resume-page .section-heading h1 em{font-style:normal;color:var(--cyan)}
